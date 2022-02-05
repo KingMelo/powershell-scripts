@@ -1,0 +1,1 @@
+-Command "Get-ChildItem -Path 'FOLDER_PATH' -File -Recurse -Force | Where-Object {($_.LastWriteTime -lt (Get-Date).AddDays(-NUMBER_OF_DAYS))}| Remove-Item -Force"
